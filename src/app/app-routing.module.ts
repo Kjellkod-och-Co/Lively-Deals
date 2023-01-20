@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExploreComponent } from './home/explore/explore.component';
 import { HomeComponent } from './home/home.component';
+import { LibraryComponent } from './home/library/library.component';
+import { ProfileComponent } from './home/profile/profile.component';
 import { SearchComponent } from './home/search/search.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent, children: [
-      { path: 'search', component: SearchComponent }
+      { path: 'search', component: SearchComponent },
+      { path: 'explore', component: ExploreComponent },
+      { path: 'library', component: LibraryComponent },
+      { path: 'profile', component: ProfileComponent },
     ]
-  }
+  },
+  { path: 'registration', component: RegistrationComponent }
 ];
 
 @NgModule({
