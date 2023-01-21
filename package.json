@@ -10,7 +10,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
-    "lint:style": "stylelint \"**/*.scss\""
+    "lint:style": "stylelint \"**/*.scss\"",
+    "fix:style": "stylelint \"**/*.scss\" --fix"
   },
   "dependencies": {
     "@angular/animations": "^15.0.0",
