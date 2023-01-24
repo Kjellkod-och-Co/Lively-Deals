@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "shop-notify",
+    "productName": "lean-deals",
     "version": "0.0.0"
   },
   "tauri": {
@@ -60,10 +60,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 1000,
         "resizable": true,
-        "title": "shop-notify",
-        "width": 800
+        "title": "Lean Deals",
+        "width": 1200
       }
     ]
   }
