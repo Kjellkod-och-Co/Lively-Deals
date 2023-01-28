@@ -96,7 +96,9 @@
               "src/styles.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/tw-elements/dist/index.min.js"
+            ]
           }
         },
         "lint": {

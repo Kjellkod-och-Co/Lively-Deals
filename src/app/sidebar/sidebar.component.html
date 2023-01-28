@@ -1,20 +1,22 @@
 <aside class="flex w-48 mt-10">
     <section class="flex-auto p-3">
-        <img class="rounded-2xl justify-center p-2" src="https://picsum.photos/150">
+        <a routerLink="/">
+            <img class="rounded-2xl justify-center p-2" src="../../assets/images/logo.png">
+        </a>
         <ul class="text-center flex items-center space-y-10 flex-col flex-auto justify-evenly">
             <li>
-                <a routerLink="/search" class="btn btn-outline-success">Search</a>
+                <a routerLink="/search" class="btn text-white bg-lean-green">Search</a>
             </li>
             <li>
-                <a routerLink="/explore" class="btn btn-outline-success">Explore</a>
-            </li>
-            <li>
-                <!-- TODO: make dnymaic according to authenticated (can add alert saying you need to sign in first) -->
-                <button routerLink="/library" [disabled]="true" class="btn btn-outline-success">Library</button>
+                <a routerLink="/explore" class="btn text-white bg-lean-green">Explore</a>
             </li>
             <li>
                 <!-- TODO: make dnymaic according to authenticated (can add alert saying you need to sign in first) -->
-                <button routerLink="/profile" [disabled]="true"  class="btn btn-outline-success">Profile</button>
+                <button routerLink="/library" [disabled]="true" class="btn text-lean-green">Library</button>
+            </li>
+            <li>
+                <!-- TODO: make dnymaic according to authenticated (can add alert saying you need to sign in first) -->
+                <button routerLink="/profile" [disabled]="true"  class="btn text-lean-green">Profile</button>
             </li>
             <li>
                 <a routerLink="/registration">Login</a>

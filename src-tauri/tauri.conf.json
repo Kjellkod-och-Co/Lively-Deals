@@ -7,11 +7,15 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "shop-notify",
+    "productName": "lean-deals",
     "version": "0.0.0"
   },
   "tauri": {
     "allowlist": {
+      "http": {
+        "all": true,
+        "request": true
+      },
       "all": false,
       "shell": {
         "all": false,
@@ -33,7 +37,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tenkaklet.leandeals",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -60,10 +64,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 1000,
         "resizable": true,
-        "title": "shop-notify",
-        "width": 800
+        "title": "Lean Deals",
+        "width": 1200
       }
     ]
   }
