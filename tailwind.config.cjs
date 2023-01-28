@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}"],
+  content: ["./src/**/*.{html,ts}", './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
     extend: {
       colors: {
@@ -8,6 +8,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require('rippleui')],
+  plugins: [require('rippleui'), require('tw-elements/dist/plugin')],
   rippleui: {},
 }
