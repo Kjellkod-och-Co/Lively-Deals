@@ -10,6 +10,13 @@ module.exports = {
                 "no-empty-source": null,
                 "max-empty-lines": 2,
                 "no-missing-end-of-source-newline": null,
+                "no-empty-source":null,
+                "indentation": null,
+                "no-missing-end-of-source-newline": null,
+                "at-rule-empty-line-before": null,
+                "selector-list-comma-newline-after": null,
+                "rule-empty-line-before": null,
+                "string-quotes": null,
             }
         }
     ]
