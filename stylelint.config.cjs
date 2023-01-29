@@ -17,6 +17,7 @@ module.exports = {
                 "selector-list-comma-newline-after": null,
                 "rule-empty-line-before": null,
                 "string-quotes": null,
+                "at-rule-empty-line-before": "never",
             }
         }
     ]
