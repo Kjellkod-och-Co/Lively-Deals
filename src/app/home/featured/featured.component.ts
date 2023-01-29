@@ -11,6 +11,7 @@ export class FeaturedComponent implements OnInit   {
   coverImage: string = '';
   gameTitle: string = '';
   lastchange: string = '';
+  dealId = '';
   
   constructor(private sharkApi: CheadSharkApiService) {}
   ngOnInit() {

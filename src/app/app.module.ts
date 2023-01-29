@@ -22,7 +22,7 @@ import { FeaturedComponent } from './home/featured/featured.component';
     LibraryComponent,
     ProfileComponent,
     RegistrationComponent,
-    FeaturedComponent
+    FeaturedComponent,
   ],
   imports: [
     BrowserModule,
