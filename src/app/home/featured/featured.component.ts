@@ -8,9 +8,9 @@ import * as dayjs from 'dayjs'
   styleUrls: ['./featured.component.scss']
 })
 export class FeaturedComponent implements OnInit   {
-  coverImage: string = '';
-  gameTitle: string = '';
-  lastchange: string = '';
+  coverImage = '';
+  gameTitle = '';
+  lastchange = '';
   
   constructor(private sharkApi: CheadSharkApiService) {}
   ngOnInit() {

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CheadSharkApiService {
-  sharkUrl: string = `https://www.cheapshark.com/api/1.0`;
+  sharkUrl = `https://www.cheapshark.com/api/1.0`;
   constructor(private http: HttpClient) { }
 
   // https://www.cheapshark.com/api/1.0/deals?onSale=1
@@ -14,11 +14,11 @@ export class CheadSharkApiService {
   getOnSaleFeatured() {
     const url = `${this.sharkUrl}/deals?onSale=1&pageSize=1`;
     return this.http.get(url);
-  };
+  }
 }
 
 const theURL = (term: string, base: string) => {
-  let params = new HttpParams()
+  const params = new HttpParams()
     .append('format', 'json');
   return `${base}?${params.toString()}`;
 };
